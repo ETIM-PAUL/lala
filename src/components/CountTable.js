@@ -1,19 +1,18 @@
 import React from 'react'
 import { Table, Row, Col, Divider } from 'antd';
+
 const CountTable = ({data}) => {
   const columns = [
     {
       title: 'Year',
       dataIndex: 'year',
-      key: 'year',
-      // render: year => {year},
     },
     {
       title: 'Count',
-      dataIndex: 'count',
-      key: 'age',
+      dataIndex: 'count'
     }
   ]
+  
   return (
     <>
     <br/>

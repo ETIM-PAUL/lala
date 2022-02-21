@@ -28,7 +28,6 @@ const BarChart = () => {
   // gets the counts of each year
   let map = allYear.reduce((allYear, e) =>
    allYear.set(e, (allYear.get(e) || 0) + 1), new Map());
-   console.log("mapped", map)
 
   const dataa = [...map.entries()]
   const d = dataa.map(x => {
@@ -37,14 +36,9 @@ const BarChart = () => {
       count: x[1]
     } 
   })
-  // const d = dataa.reduce((x) => {
-    // return {
-    //   year: x[0],
-    //   count: x[1]
-    // }
-  // })
-  console.log("table", d)
-  
+
+  const sortedData = d.sort((a, b) => a.year - b.year)
+
   useEffect(() => {
     const results =  {
     method: 'GET',
@@ -112,7 +106,7 @@ const BarChart = () => {
     return (
       <>
         <CountTable
-        data={d}
+        data={sortedData}
         />
         <Row justify='center'>
           <Col span={20}>
