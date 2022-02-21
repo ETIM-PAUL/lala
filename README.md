@@ -8,6 +8,8 @@ Use the route /getAwardsById to get awarded actors
 
 A bar chat is now created based on how many awards are gotten in a particular year.
 
+this is a link to the site hosted on heroku - https://api-app-chart.herokuapp.com/
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
