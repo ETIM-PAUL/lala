@@ -4,7 +4,7 @@ I Use the IMDB API provided by RapidAPI to create a chart.
 
 https://rapidapi.com/SAdrian/api/data-imdb1/ 
 
-Use the route /getAwardsById to get awarded actors
+Use the route /getAwardsById to get awards won by an actor
 
 A bar chat is now created based on how many awards are gotten in a particular year.
 
